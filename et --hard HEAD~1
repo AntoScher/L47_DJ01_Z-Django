@@ -1,0 +1,29 @@
+[33mcommit b64a1e49a91195a9306006bb71862ebf555ec478[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: AntoScher <asc8er@gmail.com>
+Date:   Sun Dec 29 21:21:04 2024 +0300
+
+    add data &  test
+
+[33mcommit 78c1c2884d06d94098b572bf957dd68cbf644472[m
+Author: AntoScher <asc8er@gmail.com>
+Date:   Sun Dec 29 20:41:30 2024 +0300
+
+    app-core
+
+[33mcommit 6df4e035d111243a1b5160848d4234d1eb75ac09[m
+Author: AntoScher <asc8er@gmail.com>
+Date:   Sat Dec 28 22:55:13 2024 +0300
+
+    ignore
+
+[33mcommit 23c50cd805484f7edefa776171f960ed2f37c1f6[m
+Author: AntoScher <asc8er@gmail.com>
+Date:   Sat Dec 28 22:50:59 2024 +0300
+
+    env
+
+[33mcommit 4ee4cab758aa86fb741752a46db7209028daf637[m
+Author: AntoScher <asc8er@gmail.com>
+Date:   Sat Dec 28 22:15:02 2024 +0300
+
+    Initial commit

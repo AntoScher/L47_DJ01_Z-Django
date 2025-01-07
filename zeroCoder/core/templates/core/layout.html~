@@ -11,14 +11,11 @@
     {% endblock %}
 </head>
 <body>
-  <!-- Вставка навигации -->
-  {% include 'core/nav.html'%}
 
     {% block content %}
+
     {% endblock %}
 
-  <!-- Вставка футера -->
-  {% include 'core/foot.html' %}
 </body>
 
 </html>

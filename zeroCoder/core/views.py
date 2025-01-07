@@ -4,6 +4,6 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def index(request):
-    return render(request, 'index.html') # HttpResponse("<h1>Это мой первый проект на Django</h1>")
+    return render(request, 'core/index.html') # HttpResponse("<h1>Это мой первый проект на Django</h1>")
 def contact(request):
-    return HttpResponse("<h1>Это контакты моего проекта на Django</h1>")
+    return render(request, 'core/contact.html') # HttpResponse("<h1>Это контакты моего проекта на Django</h1>")

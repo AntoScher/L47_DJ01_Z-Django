@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 {% load static %}
@@ -11,24 +10,24 @@
     <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
 </head>
 <body>
-  <!-- Вставка навигации -->
-  {% include 'core/nav.html' %}
+    <!-- Вставка навигации -->
+    {% include 'core/nav.html' %}
 
-<aside class="d-flex justify-content-center my-3">
-    <img src="{% static 'core/img/logo-eagle.jpg' %}" class="img-fluid" alt="Logo" width="10%">
-</aside>
+    <aside class="d-flex justify-content-center my-3">
+        <img src="{% static 'core/img/logo-eagle.jpg' %}" class="img-fluid" alt="Logo" width="150">
+    </aside>
 
-<main class="container my-5">
-    {% block content %}
-    {% endblock %}
-</main>
+    <main class="container my-5">
+        {% block content %}
+        {% endblock %}
+    </main>
 
-  <!-- Вставка футера -->
-  {% include 'core/foot.html' %}
+    <!-- Вставка футера -->
+    {% include 'core/foot.html' %}
 
-  <!-- Скрипты Bootstrap -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Скрипты Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

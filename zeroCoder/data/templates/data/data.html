@@ -10,7 +10,6 @@
 </html>
 
 {% extends 'data/layout.html' %}
-
 {% block title %}
     <title>Страница данных</title>
 {% endblock %}
@@ -18,7 +17,18 @@
 {% block content%}
 
 
-  <h1>Добро пожаловать на страницу инсадерских данных сайта {{caption1}}</h1>
+  <h1>Это страница инсадерских данных сайта {{caption1}}</h1>
+{{news}}
+
+
+{% for new in news %}
+	<div>
+		<h3> {{ new.title }} </h3>
+		<p> {{ new.short_description }} </p>
+	</div>
+{% endfor %}
 
 
 {% endblock %}
+
+

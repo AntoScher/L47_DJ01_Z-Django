@@ -15,20 +15,17 @@
 {% endblock %}
 
 {% block content%}
-
-
   <h1>Это страница инсадерских данных сайта {{caption1}}</h1>
-{{news}}
-
-
+<!--{{news}}-->
 {% for new in news %}
 	<div>
-		<h3> {{ new.title }} </h3>
+		<h2> {{ new.title }} </h2>
 		<p> {{ new.short_description }} </p>
+        <p> {{ new.autor }} </p>
+        <p> {{ new.text  }} </p>
+        <p> {{ new.pub_date }} </p>
 	</div>
 {% endfor %}
-
-
 {% endblock %}
 
 

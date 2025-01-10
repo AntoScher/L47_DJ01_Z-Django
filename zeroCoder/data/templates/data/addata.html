@@ -1,0 +1,24 @@
+{% extends 'data/layout.html' %}
+
+{% block title %}
+    <title>Contacts of my project </title>
+{% endblock %}
+
+{% block content%}
+    <h1>Здесь добавляются инсайдерские данные для {{caption2}} сайта {{caption1}}</h1>
+        <div>
+            <h1>Форма для добавления новостей</h1>
+            <form method="post" >
+                <input type="text" placeholder="Заголовок новости"> <br>
+                <input type="text" placeholder="Краткое описание новости"> <br>
+                <input type="text" placeholder="Автор новости"> <br>
+                <textarea placeholder="Содержание новости"></textarea> <br>
+                <input type="date", placeholder="Дата публикации"> <br>
+               <input type="time",placeholder="Время публикации"> <br>
+
+                <button type="submit">Добавить новость</button>
+            </form>
+        </div>
+
+
+{% endblock %}

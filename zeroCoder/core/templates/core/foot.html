@@ -1,9 +1,24 @@
-<!-- footer.html -->
 <footer>
-    <ul>
-        <li><a href="/about">О нас</a></li>
-        <li><a href="/privacy">Политика конфиденциальности</a></li>
-        <li><a href="/terms">Условия использования</a></li>
-        <li><a href="/support">Поддержка</a></li>
-    </ul>
+    <nav>
+        <ul style="list-style: none; display: flex; align-items: center; gap: 1em;">
+            <li><a href="/about">О нас</a></li>
+            <li><a href="/support">Поддержка</a></li>
+            <li>
+                <a href="{% url 'users:login' %}">Войти</a>
+            </li>
+            <li>
+                <a href="{% url 'users:register' %}">Зарегистрироваться</a>
+            </li>
+            <li>
+                <form action="{% url 'users:logout' %}" method="post" style="display: inline;">
+                    {% csrf_token %}
+                    <a href="#" onclick="event.preventDefault(); this.closest('form').submit();" style="text-decoration: none; color: inherit; cursor: pointer;">
+                        Выйти
+                    </a>
+                </form>
+            </li>
+        </ul>
+    </nav>
 </footer>
+<!--<form action="{% url 'users:logout' %}" method="post" style="display: inline;">
+    {% csrf_token %}<button type="submit" class="btn-link">Выйти</button></form>-->

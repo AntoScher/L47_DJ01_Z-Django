@@ -2,14 +2,9 @@
 
 {% block content %}
 <h1>Профиль</h1>
-
+<p>Добро пожаловать, {{ user.username }}!</p>
 <form method="post" enctype="multipart/form-data">
     {% csrf_token %}
-
-
-    {% else %}
-    <p><img src="{{ default_image }}">
-    {% endif %}
 
     <div class="form-error">{{ form.non_field_errors }}</div>
     {% for f in form %}
@@ -24,3 +19,4 @@
 <p><a href="{% url 'users:password_change' %}">Сменить пароль</a></p>
 
 {% endblock %}
+

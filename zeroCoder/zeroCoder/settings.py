@@ -141,8 +141,7 @@ LOGIN_URL = 'users:login'
 #='users:profile'
 #LOGIN_REDIRECT_URL = 'users:profile'  # Используем namespace и имя URL-шаблона
 
-
-#AUTH_USER_MODEL = 'users.User'
+AUTH_USER_MODEL = 'users.User'
 """ 
      AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',

@@ -25,8 +25,8 @@ class RegisterUser(CreateView):
     success_url = reverse_lazy('users:login')
 
 
-class ProfileUser(LoginRequiredMixin, TemplateView):
-#class ProfileUser(LoginRequiredMixin, UpdateView):
+#class ProfileUser(LoginRequiredMixin, TemplateView):
+class ProfileUser(LoginRequiredMixin, UpdateView):
     model = get_user_model()
     form_class = ProfileUserForm
     template_name = 'users/profile.html'

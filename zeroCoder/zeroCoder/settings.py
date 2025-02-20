@@ -133,4 +133,15 @@ STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]
 #LOGIN_REDIRECT_URL = 'profile'  # Имя URL-шаблона, куда перенаправлять после входа
-LOGIN_REDIRECT_URL = 'users:profile'  # Используем namespace и имя URL-шаблона
+
+LOGIN_REDIRECT_URL = 'index'
+LOGOUT_REDIRECT_URL = 'index'
+LOGIN_URL = 'users:login'
+#LOGIN_REDIRECT_URL = 'users:profile'  # Используем namespace и имя URL-шаблона
+"""
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'users.authentication.EmailAuthBackend',
+]
+AUTH_USER_MODEL = 'users.User'
+"""

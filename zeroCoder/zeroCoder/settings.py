@@ -137,11 +137,15 @@ STATICFILES_DIRS = [
 LOGIN_REDIRECT_URL = 'index'
 LOGOUT_REDIRECT_URL = 'index'
 LOGIN_URL = 'users:login'
+
+#='users:profile'
 #LOGIN_REDIRECT_URL = 'users:profile'  # Используем namespace и имя URL-шаблона
-"""
-AUTHENTICATION_BACKENDS = [
+
+
+#AUTH_USER_MODEL = 'users.User'
+""" 
+     AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
     'users.authentication.EmailAuthBackend',
-]
-AUTH_USER_MODEL = 'users.User'
+]     
 """

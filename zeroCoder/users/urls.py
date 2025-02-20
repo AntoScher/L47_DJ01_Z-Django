@@ -34,4 +34,5 @@ urlpatterns = [
 
     path('register/', views.RegisterUser.as_view(), name='register'),
     path('profile/', views.ProfileUser.as_view(), name='profile'),
+    #path('accounts/profile/', views.ProfileUser.as_view(), name='profile'),
 ]

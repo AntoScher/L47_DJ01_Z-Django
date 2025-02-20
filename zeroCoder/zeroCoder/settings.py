@@ -132,3 +132,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]
+#LOGIN_REDIRECT_URL = 'profile'  # Имя URL-шаблона, куда перенаправлять после входа
+LOGIN_REDIRECT_URL = 'users:profile'  # Используем namespace и имя URL-шаблона
